@@ -1,10 +1,12 @@
 /***** Reset *****/
 
-// _base.scss (Reset)
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html {
@@ -30,4 +32,10 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
 }
