@@ -33,17 +33,99 @@
   flex-direction: column;
   text-align: center;
 
-  .fonctionnement__title {
+  .title {
     font-size: 24px;
     font-weight: 700;
   }
 
-  .boutons_fonctionnement {
-    width: 100%;
+  .boutons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 30px;
+  }
+}
+
+/***** Restaurants *****/
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .cards_container {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+  }
+
+  .card {
+    .img_container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nouveau {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #99e2d0;
+      color: #008766;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 2px;
+      padding: 6px 10px;
+    }
+
+    .content {
+      height: 100%;
+      padding: 20px;
+      background-color: #ffffff;
+
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .name {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .place {
+          font-size: 14px;
+          font-weight: 200;
+        }
+      }
+
+      .fa-heart {
+        background: linear-gradient(to bottom, #ff79da, #9356dc);
+        background-clip: text;
+        color: transparent;
+        font-size: 22px;
+      }
+    }
   }
 }
