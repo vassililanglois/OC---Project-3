@@ -4,3 +4,7 @@
 @use "layout/footer";
 @use "components/boutons";
 @use "components/cartes";
+
+body {
+  background-color: $white-color;
+}
