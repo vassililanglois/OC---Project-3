@@ -81,4 +81,104 @@ header .location p {
   font-size: 16px;
 }
 
+/***** Accueil *****/
+.accueil {
+  background-color: #f6f6f6;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.accueil .accueil__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.accueil .accueil_subtitle {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/***** Fonctionnement *****/
+.fonctionnement {
+  background-color: #ffffff;
+  padding: 60px 30px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+.fonctionnement .fonctionnement__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.fonctionnement .boutons_fonctionnement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bouton_explorer {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: linear-gradient(0deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
+}
+
+.boutons {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.boutons button {
+  background-color: #f6f6f6;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+}
+.boutons .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #9356dc;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  left: -15px;
+}
+.boutons .fa-solid {
+  font-size: 18px;
+  color: #9356dc;
+}
+.boutons p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,63 @@
+.bouton_explorer {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: linear-gradient(
+    0deg,
+    hsl(267deg 66% 60%) 0%,
+    hsl(317deg 100% 74%) 100%
+  );
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
+}
+
+.boutons {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  button {
+    background-color: #f6f6f6;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+  }
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #9356dc;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    left: -15px;
+  }
+
+  .fa-solid {
+    font-size: 18px;
+    color: #9356dc;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
