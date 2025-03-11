@@ -1,10 +1,7 @@
 @use "variables";
 @use "base";
 @use "layout/header";
+@use "layout/location";
 @use "layout/footer";
 @use "components/boutons";
 @use "components/cartes";
-
-body {
-  background-color: $white-color;
-}
