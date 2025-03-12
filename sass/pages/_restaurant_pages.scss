@@ -76,8 +76,7 @@ main {
               #{vars.$purple-color}
             );
             background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             opacity: 0; /* Caché au départ */
             clip-path: inset(100% 0 0 0); /* Masqué complètement */
             transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;

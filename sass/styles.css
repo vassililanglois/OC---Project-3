@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -373,8 +372,7 @@ footer .footer_links a .fa-solid {
   top: 0;
   background: linear-gradient(0deg, #ff79da, #9356dc);
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   opacity: 0; /* Caché au départ */
   clip-path: inset(100% 0 0 0); /* Masqué complètement */
   transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -590,8 +588,7 @@ main .background_menu .menu_container .menu_header .hearts .full-heart {
   top: 0;
   background: linear-gradient(0deg, #ff79da, #9356dc);
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   opacity: 0; /* Caché au départ */
   clip-path: inset(100% 0 0 0); /* Masqué complètement */
   transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
