@@ -277,6 +277,19 @@ footer .footer_links a .fa-solid {
   font-size: 14px;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 100px;
+    padding-top: 50px;
+  }
+  footer .footer_links {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
 /***** Accueil *****/
 .bouton_explorer {
   border: none;
