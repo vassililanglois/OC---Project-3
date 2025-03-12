@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***** Couleurs *****/
 /***** Reset *****/
 * {
@@ -85,13 +86,13 @@ header .location p {
 /***** Accueil *****/
 .accueil {
   background-color: #f3f3f3;
-  padding: 30px;
+  padding: 60px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 20px;
+  gap: 10px;
 }
 .accueil .accueil_title {
   font-size: 1.5rem;
@@ -100,6 +101,7 @@ header .location p {
 .accueil .accueil_subtitle {
   font-size: 1.2rem;
   font-weight: 200;
+  margin-bottom: 30px;
 }
 
 /***** Fonctionnement *****/
@@ -181,6 +183,7 @@ footer .footer_links a .fa-solid {
   font-size: 14px;
 }
 
+/***** Accueil *****/
 .bouton_explorer {
   border: none;
   border-radius: 25px;
@@ -192,7 +195,12 @@ footer .footer_links a .fa-solid {
   background-image: linear-gradient(0deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
 }
+.bouton_explorer:hover {
+  background-image: linear-gradient(0deg, hsl(267, 66%, 65%) 0%, hsl(317, 100%, 79%) 100%);
+  box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.85);
+}
 
+/***** Fonctionnement *****/
 .boutons {
   width: 100%;
   border-radius: 20px;
@@ -241,6 +249,7 @@ footer .footer_links a .fa-solid {
   font-weight: 500;
 }
 
+/***** Homepage *****/
 .restaurants .card .img_container {
   display: flex;
   width: 100%;
@@ -289,11 +298,31 @@ footer .footer_links a .fa-solid {
   font-size: 1rem;
   font-weight: 200;
 }
-.restaurants .card .content .fa-heart {
-  background: linear-gradient(to bottom, #ff79da, #9356dc);
-  background-clip: text;
-  color: transparent;
+.restaurants .card .content .hearts {
+  position: relative;
+  display: inline-block;
+}
+.restaurants .card .content .hearts .empty-heart,
+.restaurants .card .content .hearts .full-heart {
   font-size: 1.5rem;
 }
+.restaurants .card .content .hearts .full-heart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0; /* Caché au départ */
+  clip-path: inset(100% 0 0 0); /* Masqué complètement */
+  transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.restaurants .card .content .hearts:hover .full-heart {
+  opacity: 1;
+  clip-path: inset(0 0 0 0); /* Dévoile progressivement le texte du bas vers le haut */
+}
+
+/***** Restaurants Page *****/
 
 /*# sourceMappingURL=styles.css.map */

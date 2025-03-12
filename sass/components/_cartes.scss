@@ -1,5 +1,7 @@
 @use "../variables" as vars;
 
+/***** Homepage *****/
+
 .restaurants {
   .card {
     .img_container {
@@ -56,16 +58,41 @@
         }
       }
 
-      .fa-heart {
-        background: linear-gradient(
-          to bottom,
-          vars.$pink-color,
-          vars.$purple-color
-        );
-        background-clip: text;
-        color: transparent;
-        font-size: 1.5rem;
+      .hearts {
+        position: relative;
+        display: inline-block;
+
+        .empty-heart,
+        .full-heart {
+          font-size: 1.5rem;
+        }
+
+        .full-heart {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: linear-gradient(
+            0deg,
+            #{vars.$pink-color},
+            #{vars.$purple-color}
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          opacity: 0; /* Caché au départ */
+          clip-path: inset(100% 0 0 0); /* Masqué complètement */
+          transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        &:hover .full-heart {
+          opacity: 1;
+          clip-path: inset(
+            0 0 0 0
+          ); /* Dévoile progressivement le texte du bas vers le haut */
+        }
       }
     }
   }
 }
+
+/***** Restaurants Page *****/
