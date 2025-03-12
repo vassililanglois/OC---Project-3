@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La palette du gout</title>
+    <title>À la française</title>
     <link rel="stylesheet" href="../sass/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +46,7 @@
     <main>
       <div class="restaurant_image_container">
         <img
-          src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
           alt="food in a restaurant"
           class="restaurant_image"
         />
@@ -55,7 +55,7 @@
         <div class="background_menu">
           <div class="menu_container">
             <div class="menu_header">
-              <h1>La palette du goût</h1>
+              <h1>À la française</h1>
               <div class="hearts">
                 <i class="fa-regular fa-heart empty-heart"></i>
                 <i class="fa-solid fa-heart full-heart"></i>
@@ -70,8 +70,8 @@
               <div class="card_food_container">
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Fricassée d'escargots</h3>
-                    <h4 class="food_description">Au piment d'Espelette</h4>
+                    <h3 class="food_name">Tartare de poulpe acidulé</h3>
+                    <h4 class="food_description">Aux zestes d'orange</h4>
                   </div>
                   <div class="price">
                     <p>25€</p>
@@ -80,9 +80,9 @@
 
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Foie gras de canard mi-cuit</h3>
+                    <h3 class="food_name">Velouté de légumes d'antan</h3>
                     <h4 class="food_description">
-                      Et ses copeaux de truffe noire
+                      Carotte, panais, topinambour
                     </h4>
                   </div>
                   <div class="price">
@@ -92,10 +92,8 @@
 
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Œuf au plat</h3>
-                    <h4 class="food_description">
-                      Assaisonné à la truffe sur lit de caviar
-                    </h4>
+                    <h3 class="food_name">Soupe à l'oignon</h3>
+                    <h4 class="food_description">Revisitée</h4>
                   </div>
                   <div class="price">
                     <p>20€</p>
@@ -112,9 +110,9 @@
               <div class="card_food_container">
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Filet de bœuf aux herbes</h3>
+                    <h3 class="food_name">Coquilles Saint-Jacques</h3>
                     <h4 class="food_description">
-                      Accompagné de sa ribambelle de légumes
+                      Accompagnées d'une purée de panais
                     </h4>
                   </div>
                   <div class="price">
@@ -124,9 +122,9 @@
 
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Parmentier de queue de bœuf</h3>
+                    <h3 class="food_name">Magret de canard</h3>
                     <h4 class="food_description">
-                      À la truffe noire sur sa purée de panais
+                      Et parmentier de pommes de terre
                     </h4>
                   </div>
                   <div class="price">
@@ -136,8 +134,10 @@
 
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Filet de turbot</h3>
-                    <h4 class="food_description">Filet de turbot</h4>
+                    <h3 class="food_name">Pigeonneau d’Ille-et-Vilaine</h3>
+                    <h4 class="food_description">
+                      Sur son lit de gnocchis aux légumes
+                    </h4>
                   </div>
                   <div class="price">
                     <p>44€</p>
@@ -154,8 +154,8 @@
               <div class="card_food_container">
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Paris-Brest</h3>
-                    <h4 class="food_description">Revisité</h4>
+                    <h3 class="food_name">Pétales de violettes glacés</h3>
+                    <h4 class="food_description">Et purée de noisettes</h4>
                   </div>
                   <div class="price">
                     <p>18€</p>
@@ -164,10 +164,8 @@
 
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Macaron au chocolat d'exception</h3>
-                    <h4 class="food_description">
-                      Et glace à la vanille de Madagascar
-                    </h4>
+                    <h3 class="food_name">Fondant au chocolat</h3>
+                    <h4 class="food_description">Revisité</h4>
                   </div>
                   <div class="price">
                     <p>22€</p>
@@ -176,10 +174,8 @@
 
                 <article class="card_food">
                   <div class="text">
-                    <h3 class="food_name">Mousse au chocolat</h3>
-                    <h4 class="food_description">
-                      Au piment d'Espelette et à la truffe noire
-                    </h4>
+                    <h3 class="food_name">Millefeuille croustillant</h3>
+                    <h4 class="food_description">Myrtilles et pâte d’amande</h4>
                   </div>
                   <div class="price">
                     <p>23€</p>
