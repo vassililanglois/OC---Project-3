@@ -16,11 +16,18 @@ header {
     height: 63px;
     box-shadow: 0px -200px 10px 200px rgba(0, 0, 0, 0.75);
     z-index: 999;
+    position: relative;
+
+    a {
+      height: 100%;
+    }
 
     .fa-arrow-left {
-      display: none;
+      color: vars.$grey-color;
+      font-size: 1.2rem;
       position: absolute;
       left: 5%;
+      top: calc(50% - 8px);
     }
   }
 

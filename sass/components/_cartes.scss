@@ -94,12 +94,46 @@
   }
 }
 
-/***** Restaurants Page *****/
+/***** Restaurants *****/
 
 @media (min-width: 768px) {
   .restaurants {
     .card {
       flex: 1 1 calc(50% - 50px);
+    }
+  }
+}
+
+/***** Pages Restaurant *****/
+
+.card_food {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .food_name {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    .food_description {
+      font-size: 0.9rem;
+      font-weight: 200;
+    }
+  }
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    p {
+      font-size: 0.9rem;
+      font-weight: 600;
     }
   }
 }

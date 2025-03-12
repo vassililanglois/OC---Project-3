@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/***** Genereal *****/
 /***** Couleurs *****/
 /***** Reset *****/
 * {
@@ -41,6 +42,8 @@ img {
   border: none;
 }
 
+/***** Layout *****/
+/***** Genereal *****/
 /***** Loader *****/
 .loader_container {
   background-color: white;
@@ -129,6 +132,7 @@ img {
     opacity: 1;
   }
 }
+/***** Genereal *****/
 header {
   display: flex;
   justify-content: center;
@@ -145,11 +149,17 @@ header .header {
   height: 63px;
   box-shadow: 0px -200px 10px 200px rgba(0, 0, 0, 0.75);
   z-index: 999;
+  position: relative;
+}
+header .header a {
+  height: 100%;
 }
 header .header .fa-arrow-left {
-  display: none;
+  color: #353535;
+  font-size: 1.2rem;
   position: absolute;
   left: 5%;
+  top: calc(50% - 8px);
 }
 header .location {
   background-color: #eaeaea;
@@ -177,6 +187,243 @@ header .location input {
   background-color: #eaeaea;
 }
 
+/***** Genereal *****/
+footer {
+  background-color: #353535;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 10;
+}
+footer .logo {
+  font-family: Shrikhand;
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+}
+footer .footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer_links a {
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: 0.8rem;
+}
+footer .footer_links a .icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+}
+footer .footer_links a .icon_container .fa-solid {
+  color: white;
+  font-size: 1rem;
+}
+footer .footer_links a .fa-solid {
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 100px;
+    padding-top: 50px;
+  }
+  footer .footer_links {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+/***** Components *****/
+/***** Accueil *****/
+.gradient_button {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  width: fit-content;
+  background-image: linear-gradient(0deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
+}
+.gradient_button:hover {
+  background-image: linear-gradient(0deg, hsl(267, 66%, 65%) 0%, hsl(317, 100%, 79%) 100%);
+  box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.85);
+}
+
+/***** Fonctionnement *****/
+.boutons {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.boutons button {
+  background-color: #f6f6f6;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+}
+.boutons .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #9356dc;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  left: -12px;
+}
+.boutons .number p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.boutons .fa-solid {
+  font-size: 1.2rem;
+  color: #9356dc;
+}
+.boutons p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/***** Genereal *****/
+/***** Homepage *****/
+.restaurants .card .img_container {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.restaurants .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants .card .nouveau {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 6px 10px;
+}
+.restaurants .card .content {
+  padding: 20px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.restaurants .card .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.restaurants .card .content .text .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.restaurants .card .content .text .place {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.restaurants .card .content .hearts {
+  position: relative;
+  display: inline-block;
+}
+.restaurants .card .content .hearts .empty-heart,
+.restaurants .card .content .hearts .full-heart {
+  font-size: 1.5rem;
+}
+.restaurants .card .content .hearts .full-heart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0; /* Caché au départ */
+  clip-path: inset(100% 0 0 0); /* Masqué complètement */
+  transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.restaurants .card .content .hearts:hover .full-heart {
+  opacity: 1;
+  clip-path: inset(0 0 0 0); /* Dévoile progressivement le texte du bas vers le haut */
+}
+
+/***** Restaurants *****/
+@media (min-width: 768px) {
+  .restaurants .card {
+    flex: 1 1 calc(50% - 50px);
+  }
+}
+/***** Pages Restaurant *****/
+.card_food {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+}
+.card_food .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card_food .text .food_name {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.card_food .text .food_description {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.card_food .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card_food .price p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/***** Pages *****/
+/***** Genereal *****/
 /***** Accueil *****/
 .accueil {
   background-color: #f3f3f3;
@@ -273,182 +520,71 @@ header .location input {
     gap: 50px;
   }
 }
-footer {
-  background-color: #353535;
-  padding: 20px;
+/***** Genereal *****/
+main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-}
-footer .logo {
-  font-family: Shrikhand;
-  font-size: 1rem;
-  color: white;
-  font-style: italic;
-}
-footer .footer_links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-footer .footer_links a {
-  display: flex;
-  gap: 10px;
-  color: white;
-  font-size: 0.8rem;
-}
-footer .footer_links a .icon_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1rem;
-}
-footer .footer_links a .icon_container .fa-solid {
-  color: white;
-  font-size: 1rem;
-}
-footer .footer_links a .fa-solid {
-  color: white;
-  font-size: 14px;
-}
-
-@media (min-width: 1024px) {
-  footer {
-    flex-direction: row-reverse;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: 100px;
-    padding-top: 50px;
-  }
-  footer .footer_links {
-    flex-direction: row;
-    gap: 20px;
-  }
-}
-/***** Accueil *****/
-.bouton_explorer {
-  border: none;
-  border-radius: 25px;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  background-image: linear-gradient(0deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
-  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
-}
-.bouton_explorer:hover {
-  background-image: linear-gradient(0deg, hsl(267, 66%, 65%) 0%, hsl(317, 100%, 79%) 100%);
-  box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.85);
-}
-
-/***** Fonctionnement *****/
-.boutons {
-  width: 100%;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.boutons button {
-  background-color: #f6f6f6;
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 20px;
-  padding: 30px;
   position: relative;
-  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
 }
-.boutons .number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-color: #9356dc;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  left: -12px;
-}
-.boutons .number p {
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-.boutons .fa-solid {
-  font-size: 1.2rem;
-  color: #9356dc;
-}
-.boutons p {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-/***** Homepage *****/
-.restaurants .card .img_container {
-  display: flex;
+main .restaurant_image_container {
+  position: relative;
   width: 100%;
-  height: 10rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  padding-bottom: 40%;
   overflow: hidden;
-  position: relative;
+  min-height: 275px;
+  max-height: 400px;
 }
-.restaurants .card img {
+main .restaurant_image_container .restaurant_image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
 }
-.restaurants .card .nouveau {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #99e2d0;
-  color: #008766;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border-radius: 2px;
-  padding: 6px 10px;
-}
-.restaurants .card .content {
-  padding: 20px;
-  background-color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+main .background_menu {
+  background-color: #eaeaea;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: -50px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
-.restaurants .card .content .text {
+main .background_menu .menu_container {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  padding: 20px;
+  max-width: 634px;
+  width: 100%;
+  gap: 20px;
 }
-.restaurants .card .content .text .name {
-  font-size: 1.1rem;
-  font-weight: 600;
+main .background_menu .menu_container .menu_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.restaurants .card .content .text .place {
-  font-size: 1rem;
-  font-weight: 200;
+main .background_menu .menu_container .menu_header h1 {
+  font-family: Shrikhand;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: lighter;
 }
-.restaurants .card .content .hearts {
+main .background_menu .menu_container .menu_header .hearts {
   position: relative;
   display: inline-block;
+  margin-right: 30px;
 }
-.restaurants .card .content .hearts .empty-heart,
-.restaurants .card .content .hearts .full-heart {
+main .background_menu .menu_container .menu_header .hearts .empty-heart,
+main .background_menu .menu_container .menu_header .hearts .full-heart {
   font-size: 1.5rem;
 }
-.restaurants .card .content .hearts .full-heart {
+main .background_menu .menu_container .menu_header .hearts .full-heart {
   position: absolute;
   left: 0;
   top: 0;
@@ -460,15 +596,45 @@ footer .footer_links a .fa-solid {
   clip-path: inset(100% 0 0 0); /* Masqué complètement */
   transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-.restaurants .card .content .hearts:hover .full-heart {
+main .background_menu .menu_container .menu_header .hearts:hover .full-heart {
   opacity: 1;
   clip-path: inset(0 0 0 0); /* Dévoile progressivement le texte du bas vers le haut */
 }
+main .background_menu .menu_container .menu_group .group_name h2 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+main .background_menu .menu_container .menu_group .group_name div {
+  height: 3px;
+  background-color: #99e2d0;
+  width: 40px;
+  margin-top: 5px;
+  border-radius: 30px;
+}
+main .background_menu .menu_container .menu_group .card_food_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+main .background_menu .menu_container .button_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-/***** Restaurants Page *****/
-@media (min-width: 768px) {
-  .restaurants .card {
-    flex: 1 1 calc(50% - 50px);
+/***** Responsive *****/
+@media (min-width: 1024px) {
+  main .background {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  main .background .menu_container .menu_header {
+    justify-content: flex-start;
+    gap: 20px;
   }
 }
 

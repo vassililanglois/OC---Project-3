@@ -1,8 +1,18 @@
+/***** Genereal *****/
+
 @use "variables";
 @use "base";
+
+/***** Layout *****/
 @use "layout/loader";
 @use "layout/header";
-@use "layout/main";
 @use "layout/footer";
+
+/***** Components *****/
 @use "components/boutons";
 @use "components/cartes";
+
+/***** Pages *****/
+
+@use "../index.scss";
+@use "pages/la_palette_du_gout";
