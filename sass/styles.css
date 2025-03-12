@@ -557,10 +557,7 @@ main {
 main .restaurant_image_container {
   position: relative;
   width: 100%;
-  padding-bottom: 40%;
-  overflow: hidden;
   min-height: 275px;
-  max-height: 400px;
 }
 main .restaurant_image_container .restaurant_image {
   position: absolute;
