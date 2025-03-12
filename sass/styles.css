@@ -189,10 +189,12 @@ header .location input {
   gap: 10px;
 }
 .accueil .accueil_title {
+  text-wrap: balance;
   font-size: 1.5rem;
   font-weight: 700;
 }
 .accueil .accueil_subtitle {
+  text-wrap: balance;
   font-size: 1.2rem;
   font-weight: 200;
   margin-bottom: 30px;
@@ -237,6 +239,40 @@ header .location input {
   gap: 20px;
 }
 
+@media (min-width: 1024px) {
+  /***** Accueil *****/
+  .accueil {
+    padding: 40px 30px;
+  }
+  .accueil .accueil_title {
+    font-size: 2.5rem;
+  }
+  .accueil .accueil_subtitle {
+    font-size: 1.2rem;
+  }
+  /***** Fonctionnement *****/
+  .fonctionnement {
+    background-color: white;
+    padding: 50px 180px;
+    gap: 25px;
+  }
+  .fonctionnement .boutons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  /***** Restaurants *****/
+  .restaurants {
+    padding: 50px 180px;
+    display: flex;
+  }
+  .restaurants .cards_container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
 footer {
   background-color: #353535;
   padding: 20px;
@@ -383,7 +419,6 @@ footer .footer_links a .fa-solid {
   padding: 6px 10px;
 }
 .restaurants .card .content {
-  height: 100%;
   padding: 20px;
   background-color: white;
   border-bottom-left-radius: 20px;
@@ -431,5 +466,10 @@ footer .footer_links a .fa-solid {
 }
 
 /***** Restaurants Page *****/
+@media (min-width: 768px) {
+  .restaurants .card {
+    flex: 1 1 calc(50% - 50px);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

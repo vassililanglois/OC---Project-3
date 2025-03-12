@@ -33,7 +33,6 @@
     }
 
     .content {
-      height: 100%;
       padding: 20px;
       background-color: white;
 
@@ -96,3 +95,11 @@
 }
 
 /***** Restaurants Page *****/
+
+@media (min-width: 768px) {
+  .restaurants {
+    .card {
+      flex: 1 1 calc(50% - 50px);
+    }
+  }
+}

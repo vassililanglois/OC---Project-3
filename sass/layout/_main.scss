@@ -12,11 +12,13 @@
   gap: 10px;
 
   .accueil_title {
+    text-wrap: balance;
     font-size: 1.5rem;
     font-weight: 700;
   }
 
   .accueil_subtitle {
+    text-wrap: balance;
     font-size: 1.2rem;
     font-weight: 200;
     margin-bottom: 30px;
@@ -65,5 +67,46 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /***** Accueil *****/
+  .accueil {
+    padding: 40px 30px;
+    .accueil_title {
+      font-size: 2.5rem;
+    }
+
+    .accueil_subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+  /***** Fonctionnement *****/
+
+  .fonctionnement {
+    background-color: white;
+    padding: 50px 180px;
+    gap: 25px;
+
+    .boutons {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+  /***** Restaurants *****/
+  .restaurants {
+    padding: 50px 180px;
+    display: flex;
+
+    .cards_container {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
   }
 }
