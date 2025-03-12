@@ -10,8 +10,7 @@ footer {
 
   .logo {
     font-family: Shrikhand;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     color: white;
     font-style: italic;
   }
@@ -24,15 +23,16 @@ footer {
       display: flex;
       gap: 10px;
       color: white;
+      font-size: 0.8rem;
 
       .icon_container {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20px;
+        width: 1rem;
         .fa-solid {
           color: white;
-          font-size: 14px;
+          font-size: 1rem;
         }
       }
 

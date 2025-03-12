@@ -24,7 +24,7 @@
       right: 10px;
       background-color: vars.$light-green-color;
       color: vars.$green-color;
-      font-size: 12px;
+      font-size: 0.8rem;
       font-weight: 500;
       border-radius: 2px;
       padding: 6px 10px;
@@ -46,12 +46,12 @@
         flex-direction: column;
         gap: 5px;
         .name {
-          font-size: 16px;
+          font-size: 1.1rem;
           font-weight: 600;
         }
 
         .place {
-          font-size: 14px;
+          font-size: 1rem;
           font-weight: 200;
         }
       }
@@ -64,7 +64,7 @@
         );
         background-clip: text;
         color: transparent;
-        font-size: 22px;
+        font-size: 1.5rem;
       }
     }
   }

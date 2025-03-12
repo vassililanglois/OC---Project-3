@@ -75,11 +75,11 @@ header .location {
   z-index: 10;
 }
 header .location .fa-location-dot {
-  font-size: 15px;
+  font-size: 1rem;
   color: #353535;
 }
 header .location p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /***** Accueil *****/
@@ -93,12 +93,12 @@ header .location p {
   text-align: center;
   gap: 20px;
 }
-.accueil .accueil__title {
-  font-size: 24px;
+.accueil .accueil_title {
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .accueil .accueil_subtitle {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 
@@ -114,7 +114,7 @@ header .location p {
   text-align: center;
 }
 .fonctionnement .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .fonctionnement .boutons {
@@ -132,7 +132,7 @@ header .location p {
   gap: 20px;
 }
 .restaurants .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .restaurants .cards_container {
@@ -151,8 +151,7 @@ footer {
 }
 footer .logo {
   font-family: Shrikhand;
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 1rem;
   color: white;
   font-style: italic;
 }
@@ -165,16 +164,17 @@ footer .footer_links a {
   display: flex;
   gap: 10px;
   color: white;
+  font-size: 0.8rem;
 }
 footer .footer_links a .icon_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
+  width: 1rem;
 }
 footer .footer_links a .icon_container .fa-solid {
   color: white;
-  font-size: 14px;
+  font-size: 1rem;
 }
 footer .footer_links a .fa-solid {
   color: white;
@@ -185,9 +185,9 @@ footer .footer_links a .fa-solid {
   border: none;
   border-radius: 25px;
   color: white;
-  padding: 20px;
+  padding: 15px 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   background-image: linear-gradient(0deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
@@ -209,7 +209,7 @@ footer .footer_links a .fa-solid {
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 20px;
   padding: 30px;
   position: relative;
@@ -226,14 +226,18 @@ footer .footer_links a .fa-solid {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  left: -15px;
+  left: -12px;
+}
+.boutons .number p {
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 .boutons .fa-solid {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #9356dc;
 }
 .boutons p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -257,7 +261,7 @@ footer .footer_links a .fa-solid {
   right: 10px;
   background-color: #99e2d0;
   color: #008766;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 500;
   border-radius: 2px;
   padding: 6px 10px;
@@ -278,18 +282,18 @@ footer .footer_links a .fa-solid {
   gap: 5px;
 }
 .restaurants .card .content .text .name {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .restaurants .card .content .text .place {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 200;
 }
 .restaurants .card .content .fa-heart {
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   background-clip: text;
   color: transparent;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
