@@ -41,8 +41,14 @@ header {
       color: vars.$grey-color;
     }
 
-    p {
+    input {
+      height: 100%;
+      color: vars.$grey-color;
       font-size: 1rem;
+      max-width: 8rem;
+      outline: none;
+      border: none;
+      background-color: vars.$light-grey-color;
     }
   }
 }

@@ -53,7 +53,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  animation: loader_animation 3s forwards;
+  animation: loader_animation 0s forwards;
 }
 .loader_container #logo {
   animation: logo_animation 1s ease-in-out;
@@ -167,8 +167,14 @@ header .location .fa-location-dot {
   font-size: 1rem;
   color: #353535;
 }
-header .location p {
+header .location input {
+  height: 100%;
+  color: #353535;
   font-size: 1rem;
+  max-width: 8rem;
+  outline: none;
+  border: none;
+  background-color: #eaeaea;
 }
 
 /***** Accueil *****/
