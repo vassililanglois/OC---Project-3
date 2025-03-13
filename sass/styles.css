@@ -658,30 +658,41 @@ main .background_menu .menu_container .button_container {
   margin-bottom: 20px;
 }
 
+/***** Animations *****/
 .menu_header {
   animation: animation-plats 1s forwards ease-in-out;
-  animation-delay: 3200ms;
+  animation-delay: 3000ms;
   opacity: 0;
 }
 
 .entrees {
   animation: animation-plats 1s forwards ease-in-out;
-  animation-delay: 3400ms;
+  animation-delay: 3200ms;
   opacity: 0;
 }
 
 .plats {
   animation: animation-plats 1s forwards ease-in-out;
-  animation-delay: 3600ms;
+  animation-delay: 3400ms;
   opacity: 0;
 }
 
 .desserts {
   animation: animation-plats 1s forwards ease-in-out;
-  animation-delay: 3800ms;
+  animation-delay: 3600ms;
   opacity: 0;
 }
 
+@keyframes animation-plats {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /***** Responsive *****/
 @media (min-width: 1024px) {
   main .background {
@@ -691,16 +702,6 @@ main .background_menu .menu_container .button_container {
   main .background .menu_container .menu_header {
     justify-content: flex-start;
     gap: 20px;
-  }
-}
-@keyframes animation-plats {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 
