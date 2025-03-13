@@ -20,6 +20,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    .links_group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
     a {
       display: flex;
       gap: 10px;
@@ -55,7 +61,12 @@ footer {
 
     .footer_links {
       flex-direction: row;
-      gap: 20px;
+      gap: 40px;
+
+      .links_group {
+        flex-direction: row;
+        gap: 10px;
+      }
     }
   }
 }
