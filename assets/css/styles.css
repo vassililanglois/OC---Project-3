@@ -240,6 +240,7 @@ footer .footer_links a .fa-solid {
   }
 }
 /***** Components *****/
+/***** General *****/
 /***** Accueil *****/
 .gradient_button {
   border: none;
@@ -522,6 +523,11 @@ footer .footer_links a .fa-solid {
   gap: 20px;
 }
 
+@media (min-width: 768px) {
+  .fonctionnement .boutons {
+    flex-direction: row;
+  }
+}
 @media (min-width: 1024px) {
   /***** Accueil *****/
   .accueil {
