@@ -1,7 +1,7 @@
 /***** General *****/
 
-@use "variables";
-@use "base";
+@use "config/variables";
+@use "config/base";
 
 /***** Layout *****/
 @use "layout/loader";
