@@ -1,4 +1,4 @@
-/***** Genereal *****/
+/***** General *****/
 
 @use "variables";
 @use "base";
@@ -14,5 +14,5 @@
 
 /***** Pages *****/
 
-@use "../index.scss";
+@use "pages/index";
 @use "pages/restaurant_pages";
