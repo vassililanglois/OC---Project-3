@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/***** Genereal *****/
+/***** General *****/
 /***** Couleurs *****/
 /***** Reset *****/
 * {
@@ -42,7 +42,7 @@ img {
 }
 
 /***** Layout *****/
-/***** Genereal *****/
+/***** General *****/
 /***** Loader *****/
 .loader_container {
   background-color: white;
@@ -121,7 +121,7 @@ img {
     opacity: 1;
   }
 }
-/***** Genereal *****/
+/***** General *****/
 header {
   display: flex;
   justify-content: center;
@@ -176,7 +176,7 @@ header .location input {
   background-color: #eaeaea;
 }
 
-/***** Genereal *****/
+/***** General *****/
 footer {
   background-color: #353535;
   padding: 20px;
@@ -307,7 +307,7 @@ footer .footer_links a .fa-solid {
   font-weight: 500;
 }
 
-/***** Genereal *****/
+/***** General *****/
 /***** Homepage *****/
 .restaurants .card .img_container {
   display: flex;
@@ -459,7 +459,7 @@ footer .footer_links a .fa-solid {
 }
 
 /***** Pages *****/
-/***** Genereal *****/
+/***** General *****/
 /***** Accueil *****/
 .accueil {
   background-color: #f3f3f3;
@@ -556,7 +556,7 @@ footer .footer_links a .fa-solid {
     gap: 50px;
   }
 }
-/***** Genereal *****/
+/***** General *****/
 main {
   display: flex;
   flex-direction: column;
