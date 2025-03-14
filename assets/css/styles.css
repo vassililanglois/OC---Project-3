@@ -723,11 +723,11 @@ main .background_menu .menu_container .button_container {
 }
 /***** Responsive *****/
 @media (min-width: 1024px) {
-  main .background {
+  main .restaurant_background {
     padding-left: 15%;
     padding-right: 15%;
   }
-  main .background .menu_container .menu_header {
+  main .restaurant_background .menu_container .menu_header {
     justify-content: flex-start;
     gap: 20px;
   }
