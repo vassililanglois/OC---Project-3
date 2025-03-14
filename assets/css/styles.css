@@ -20,6 +20,10 @@ body {
   justify-content: center;
 }
 
+main {
+  align-items: center;
+}
+
 .fa-solid {
   font-size: 30px;
   color: black;
@@ -266,7 +270,6 @@ footer .footer_links a .fa-solid {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 30px;
 }
 .boutons button {
@@ -276,7 +279,7 @@ footer .footer_links a .fa-solid {
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   gap: 20px;
   padding: 30px;
   position: relative;
@@ -461,9 +464,14 @@ footer .footer_links a .fa-solid {
 
 /***** Pages *****/
 /***** General *****/
+.index_background {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 0;
+}
+
 /***** Accueil *****/
 .accueil {
-  background-color: #f3f3f3;
   padding: 60px 30px;
   display: flex;
   justify-content: center;
@@ -471,6 +479,7 @@ footer .footer_links a .fa-solid {
   flex-direction: column;
   text-align: center;
   gap: 10px;
+  max-width: 1440px;
 }
 .accueil .accueil_title {
   text-wrap: balance;
@@ -491,9 +500,11 @@ footer .footer_links a .fa-solid {
   gap: 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   text-align: center;
+  max-width: 1440px;
+  width: 100%;
 }
 .fonctionnement .title {
   font-size: 1.5rem;
@@ -507,11 +518,11 @@ footer .footer_links a .fa-solid {
 
 /***** Restaurants *****/
 .restaurants {
-  background-color: #f3f3f3;
   padding: 60px 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 1440px;
 }
 .restaurants .title {
   font-size: 1.5rem;
@@ -521,14 +532,26 @@ footer .footer_links a .fa-solid {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 1440px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
   .fonctionnement .boutons {
     flex-direction: row;
   }
+  .restaurants .cards_container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
 @media (min-width: 1024px) {
+  .index_background {
+    display: flex;
+    justify-content: center;
+  }
   /***** Accueil *****/
   .accueil {
     padding: 40px 30px;
