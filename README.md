@@ -4,6 +4,4 @@ Réalisation d'animations CSS pour le site Ohmyfood, qui permet de recherche des
 
 Technologies utilisées : 
 
-HTML
-CSS
-Sass
+HTML, CSS, Sass
