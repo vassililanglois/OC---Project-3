@@ -74,16 +74,14 @@ main {
             );
             background-clip: text;
             color: transparent;
-            opacity: 0; /* Caché au départ */
-            clip-path: inset(100% 0 0 0); /* Masqué complètement */
+            opacity: 0;
+            clip-path: inset(100% 0 0 0);
             transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
           }
 
           &:hover .full-heart {
             opacity: 1;
-            clip-path: inset(
-              0 0 0 0
-            ); /* Dévoile progressivement le texte du bas vers le haut */
+            clip-path: inset(0 0 0 0);
           }
         }
       }
